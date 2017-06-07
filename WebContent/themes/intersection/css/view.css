@@ -1,0 +1,26 @@
+.view-footer{
+	height:100px;
+	position: absolute;
+	top:850px;
+	width: 100%;
+	left: 0px;
+}
+.view-paper{
+	width:600px;
+	height:600px;
+	margin-top: 80px;
+	margin-left: 200px;
+}
+.views-paper{
+	width:1030px;
+	height:485px;
+	margin-top: 80px;
+	margin-left: 20px;
+}
+.views-footer{
+	height:100px;
+	position: absolute;
+	top:600px;
+	width: 100%;
+	left: 0px;
+}
