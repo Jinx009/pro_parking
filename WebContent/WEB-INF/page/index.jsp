@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
-<title>路口项目数据平台</title>
+<title>路口数据分析系统</title>
 <link rel="stylesheet" type="text/css" href="/themes/bt/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap-responsive.min.css" >
 <link rel="stylesheet" type="text/css" href="/themes/intersection/css/index.css?version=1.0.4" />
@@ -18,7 +18,7 @@
 	<input type="hidden" value="${appId }" id="appId" >
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		 <div class="navbar-inner">
-		     <a class="brand" href="#">&nbsp;&nbsp;路口项目数据平台</a>
+		     <a class="brand" href="#">&nbsp;&nbsp;路口数据分析系统</a>
         	<ul class="nav">
 			  <li class="active">
 			    <a href="/${appId}.html">数据曲线</a>
@@ -77,7 +77,7 @@
 	<script src="/themes/bt/js/bootstrap.min.js"></script>
 	<script src="/themes/layer/layer.js" ></script>
     <script src="/themes/js/echarts-all.js" ></script>
-    <script src="/themes/intersection/index_data.js?version=1.18"></script>
+    <script src="/themes/intersection/index_data.js?version=1.12"></script>
     <script src="/themes/intersection/index.js?version=1.16"></script>
     <script src="/themes/js/WdatePicker.js"></script>
 </body>

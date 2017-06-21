@@ -91,6 +91,6 @@
 	<script src="/themes/layer/layer.js" ></script>
     <script src="/themes/js/WdatePicker.js"></script>
     <script src="/themes/intersection/view_data.js?version=1.06"></script>
-    <script src="/themes/intersection/view.js?version=1.26"></script>
+    <script src="/themes/intersection/view.js?version=1.21"></script>
 </body>
 </html>
