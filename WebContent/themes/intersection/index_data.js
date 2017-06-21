@@ -2,9 +2,18 @@ var appId = $('#appId').val();
 var _data = '',type = 0;
 var dataArray = [];
 var _num = -1;
+var _i = -1;
 $(document).ready(function (){
+	_i = showLoad();
 	getLocation();
 })
+function showLoad(){  
+    return layer.msg('努力加载中...', {icon: 16,shade: [0.5, '#f5f5f5'],scrollbar: false,offset: '200px', time:100000}) ;  
+}  
+function closeLoad(index){  
+	_i = -1;
+    layer.close(index);  
+}  
 /**
  * 获取location
  */
@@ -20,7 +29,6 @@ function getLocation(){
 					$('#location').append('<option value="'+obj[0]+'" >'+obj[1]+'</option>');
 				})
 				getArea();
-				getData();
 			}else{
 				layer.alert(res.msg);
 			}
@@ -42,6 +50,8 @@ function getArea(){
 				$.each(res.params,function(i,obj){
 					$('#area').append('<option value="'+obj[1]+'" >'+obj[0]+'</option>');
 				})
+				getLid();
+				getData();
 			}else{
 				layer.alert(res.msg);
 			}
@@ -84,6 +94,9 @@ function changeType(num){
  * 获取数据
  */
 function getData(){
+	if(-1==_i){
+		_i = showLoad();
+	}
 	dataArray = [];
 	var _location = $('#location').val(),_area = $('#area').val(),_lid = $('#lid').val(),time = $('#time').val();
 	$.ajax({
@@ -91,6 +104,7 @@ function getData(){
 		type:'get',
 		dataType:'json',
 		success:function(res){
+			closeLoad(_i);
 			if('200'==res.respCode){
 				_data = res.params;
 				if(_data==''){

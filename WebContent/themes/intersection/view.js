@@ -1,22 +1,34 @@
 var paper,nums_array = new Array(12);
 var appId = $('#appId').val();
+var _i = -1;
 $(function(){
 	for(var i = 0;i<12;i++){
 		nums_array[i] = 0;
 	}
+	_i = showLoad();
 	paper = new Raphael(document.getElementById('paper'),600, 600);
 	getLocation();
-//	setArrow();
 })
+function showLoad(){  
+    return layer.msg('努力加载中...', {icon: 16,shade: [0.5, '#f5f5f5'],scrollbar: false,offset: '200px', time:100000}) ;  
+}  
+function closeLoad(index){  
+	_i = -1;
+    layer.close(index);  
+}  
 /**
  * 获取数据
  */
 function getData(){
+	if(-1==_i){
+		_i = showLoad();
+	}
 	var _location = $('#location').val();
 	var _area = $('#area').val();
 	var dateStr = $('#time').val();
 	var type = $('#type').val();
 	if(0!=type&&(dateStr==''||dateStr==null)&&'0'!=type){
+		closeLoad(_i);
 		layer.alert('非实时数据请选择一个时间点!');
 	}else{
 		$.ajax({
@@ -24,6 +36,7 @@ function getData(){
 			type:'get',
 			dataType:'json',
 			success:function(res){
+				closeLoad(_i);
 				if('200'==res.respCode){
 					for(var i = 0;i<12;i++){
 						nums_array[i] = 0;
