@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import database.common.BaseDaoImpl;
 import database.models.Token;
 
-@Repository("userDao")
+@Repository("tokenDao")
 public class TokenDaoImpl extends BaseDaoImpl<Token> implements TokenDao{
 
 	@SuppressWarnings("unchecked")
