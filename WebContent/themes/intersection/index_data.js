@@ -26,7 +26,7 @@ function getLocation(){
 			if('200'==res.respCode){
 				$('#location').html('');
 				$.each(res.params,function(i,obj){
-					$('#location').append('<option value="'+obj[0]+'" >'+obj[1]+'</option>');
+					$('#location').append('<option value="'+obj.id+'" >'+obj.name+'</option>');
 				})
 				getArea();
 			}else{
