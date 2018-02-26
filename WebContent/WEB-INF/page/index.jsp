@@ -77,7 +77,7 @@
 	<script src="/themes/bt/js/bootstrap.min.js"></script>
 	<script src="/themes/layer/layer.js" ></script>
     <script src="/themes/js/echarts-all.js" ></script>
-    <script src="/themes/intersection/index_data.js?version=1.13"></script>
+    <script src="/themes/intersection/index_data.js?version=1.14"></script>
     <script src="/themes/intersection/index.js?version=1.16"></script>
     <script src="/themes/js/WdatePicker.js"></script>
 </body>
