@@ -16,15 +16,17 @@
 </head>
 <body>
 	<input type="hidden" value="${appId }" id="appId" >
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		 <div class="navbar-inner">
-		     <a class="brand" href="#">&nbsp;&nbsp;路口数据分析系统</a>
-        	<ul class="nav">
-			  <li class="active">
-			    <a href="/${appId}.html">数据曲线</a>
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="padding: 0px;">
+		 <div class="navbar-inner" style="padding: 0px;">
+		     <a class="brand" href="#" style="padding-top: 0px;padding-bottom: 0px;padding-left: 5px;margin-left: 15px;">
+		     	<img alt="" src="/themes/img/2.png" height="51px" style="height: 51px;">
+		     </a>
+        	<ul class="nav" style="height: 51px;line-height: 51px;margin: 0;">
+			  <li class="active" style="height: 51px;line-height: 51px;margin: 0;">
+			    <a href="/${appId}.html" style="padding-bottom:0px;padding-top: 0px;">数据曲线</a>
 			  </li>
-			  <li><a href="/view/${appId }.html">实况预览</a></li>
-			  <li><a href="/singleView/0/${appId}.html ">全局预览</a></li>
+			  <li style="height: 51px;line-height: 51px;margin: 0;"><a href="/view/${appId }.html" style="padding-bottom:0px;padding-top: 0px;">实况预览</a></li>
+			  <li style="height: 51px;line-height: 51px;margin: 0;"><a href="/singleView/0/${appId}.html" style="padding-bottom:0px;padding-top: 0px;">全局预览</a></li>
 			</ul>
 		  </div>
 	</nav>

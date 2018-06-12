@@ -4,7 +4,7 @@ import utils.enums.AppInfo;
 
 public class HttpDataUtil {
 
-	public static final String BASE_URL = "http://localhost:8092/gtw";
+	public static final String BASE_URL = "http://wx.zhanway.com/gtw";
 	public static final String GET_TOKEN_URL = "/rest/token";
 	public static final String GET_LOCATION_URL = "/rest/locations";
 	public static final String GET_AREA_URL = "/rest/areas";
